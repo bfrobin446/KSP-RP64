@@ -37,6 +37,38 @@ RealAntennas and most life support mods follow the convention that one unit
 of ElectricCharge represents one kilojoule of energy. Batteries and
 generators will have their capacities increased to match.
 
+## How to install
+
+1. Manually download and install [Sigma Dimensions](https://github.com/Sigma88/Sigma-Dimensions/releases).
+   The last release of Sigma Dimensions that's indexed on CKAN is several
+   years out of date.
+
+1. Set CKAN to allow mods compatible with KSP 1.10 and 1.11. The mods that we
+   need 1.10 compatibility for are RealAntennas and SolverEngines.
+
+1. I intend to make RP64 installable with CKAN once I have a version that's
+   complete enough to declare as an official release. Until then:
+   
+   1. Use CKAN to install the other dependencies listed in RP64.netkan. Add
+      recommended and suggested packages to taste.
+            
+   1. Copy or link the `GameData/RP64` folder from the repository into your KSP
+      GameData.
+
+1. If you have the Breaking Ground expansion installed, change
+   `SERENITY_ROCS_VISUAL_SPEED` to 12 in KSP's `settings.cfg`.
+   For game performance reasons, the researchable surface features in Breaking
+   Ground are hidden if the active vessel's surface speed is above this
+   threshold. But when Sigma Dimensions is installed, the speed that's compared
+   to the threshold appears to be scaled down by the square of the solar system
+   scale factor. At 6.4x, a threshold of 12 causes surface features to appear
+   at roughly the same speed that we get with the default threshold of 500 at
+   stock scale.
+
+1. If you've been playing stock KSP on High terrain detail and you see poor
+   frame rates near the Mun after installing the rescale, RP64 adds a
+   "Medium-High" detail setting that may work better for you.
+
 ## Things to watch for future work
 
 ### Kerbalism
